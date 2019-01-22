@@ -1,0 +1,67 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "jbuhler")
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question PS1:
+A
+-For the linear, the graph shows (dots to form)a straight line for the ticks, and (dots to form) a several little horizontal lines going up for the time(which eventually looks a single straignt line)
+-For the quadratic, it shows (dots to form) a curve(of quadratic function) for the ticks and (dots to form) a less smooth curve for the time
+B
+-Yes.As n grows, ticks and time for linear and quadratic grow in different speed. 
+C
+-The ticker is executed n times in linear, but it is executed n*n times in the quadratic.
+
+Question PS2:
+-The time spent in linear is too little and may not be accurate, compared with quadratic.
+
+Question PS3: 
+-place the ticker outside the loop: ticks becomes constant(horizontal line), and time is still the same(this.value...still excutes)
+-place the ticker inside the outer loop: ticks becomes a straignt line (linear function) and time is still the same(like above)
+so it influence ticks only, since the other operation still executes
+
+Question PS4: 
+-it generates a curve of quadratic function(for time and ticks)
+-if we place ticker outside of loop, it generates a horizontal line
+-if we place ticker inside outer loop, it generates a line going up
+		
+Question PS5: 
+-time is still quadratic funciton of n
+-tick is a linear function of n
+	
+Question A1:
+	
+Question A2:
+	
+Question A3:
+	
+Question A4:
+
+Question A5:
+
+Question A6:
+
+Question A7:
+	
+Question C1:
+
+Question C2:
+
+Question C3:
+	
+Question D1:
+	
+Question D2:
+
+	
+	

@@ -1,0 +1,155 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "jbuhler")
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1:
+
+Question A2:
+
+Question A3:
+
+Question B1:
+
+Question B2:
+
+Question B3:
+
+Question C1:
+
+Question C2:
+
+Question C3:
+
+
+
+Question A1: Name at least three common data types that could satisfy the properties of Comparable. Include at least one non-numeric data type!
+
+
+Integer Double string
+
+
+Question A2: What do you get if you call a.compareTo(b) when the values of a and b are as follows:
+a = 1, b = 5
+a = 3.14159269, b = 2.7182818
+a = "Hello world!", b = "goodbye, world!"
+a = 357, b = 357
+
+
+-1
+1
+40
+0
+
+
+Question A3: Look at the (very long) list of Java classes that implement the Comparable interface, and pick one that you have never heard of. Read the documentation and explain what it means for one object of this class to be "less than" another.
+
+
+Compares this URI to another object, which must be a URI.
+When comparing corresponding components of two URIs, if one component is undefined but the other is defined then the first is considered to be less than the second. Unless otherwise noted, string components are ordered according to their natural, case-sensitive ordering as defined by the String.compareTo method. String components that are subject to encoding are compared by comparing their raw forms rather than their encoded forms.
+
+The ordering of URIs is defined as follows:
+
+Two URIs with different schemes are ordered according the ordering of their schemes, without regard to case.
+
+A hierarchical URI is considered to be less than an opaque URI with an identical scheme.
+
+Two opaque URIs with identical schemes are ordered according to the ordering of their scheme-specific parts.
+
+Two opaque URIs with identical schemes and scheme-specific parts are ordered according to the ordering of their fragments.
+
+Two hierarchical URIs with identical schemes are ordered according to the ordering of their authority components:
+
+If both authority components are server-based then the URIs are ordered according to their user-information components; if these components are identical then the URIs are ordered according to the ordering of their hosts, without regard to case; if the hosts are identical then the URIs are ordered according to the ordering of their ports.
+
+If one or both authority components are registry-based then the URIs are ordered according to the ordering of their authority components.
+
+Finally, two hierarchical URIs with identical schemes and authority components are ordered according to the ordering of their paths; if their paths are identical then they are ordered according to the ordering of their queries; if the queries are identical then they are ordered according to the order of their fragments.
+
+This method satisfies the general contract of the Comparable.compareTo method.
+
+
+
+
+Question B1: What is the worst-case asymptotic complexity of the following operations on a LinkedList object holding n elements?
+
+
+Appending to the end of the list: addLast(Object)
+Prepending to the beginning of the list: addFirst(Object)
+Inserting an element in the middle of the list: add(int, Object)
+
+O(1)
+O(1)
+O(n)
+
+
+
+Question B2: Given how you used LinkList to implement your PQ class, what is the worst-case asymptotic complexity of the following operations on a PQ object holding n elements?
+determining if the PQ is empty: isEmpty()
+inserting an object: insert(T)
+extracting the minimum: extractMin()
+
+
+O(1)
+O(n)
+O(1)
+
+Note:
+push(): This function is used to insert a new data into the queue.
+pop(): This function removes the element with the highest priority form the queue.
+peek() / top(): This function is used to get the highest priority element in the queue without removing it from the queue.
+              peek()    push()    pop()
+-----------------------------------------
+Linked List |   O(1)      O(n)      O(1)
+
+
+Question C1: What is the worst-case asymptotic complexity of the following operations on an OrderedArray object holding n elements?
+Appending to the end of the array: addLast(Object)
+Prepending to the beginning of the array: addFirst(Object)
+Inserting an element in the middle of the array: add(int, Object)
+
+O(n)
+O(n)
+O(n)
+
+
+Question C2: Given how you used OrderedArray to implement your PQ class, what is the worst-case asymptotic complexity of the following operations on a PQ object holding n elements?
+determining if the PQ is empty: isEmpty()
+inserting an object: insert(T)
+extracting the minimum: extractMin()
+
+O(1)
+O(n)
+O(1)
+Question C3: Can you think of situations in which you might want to use the OrderedArray or the UnorderedList implementation instead of the binary heap implementation described in class? If so, please explain.
+
+
+
+For orderedArray we can look for something in O(logn) time
+For UnorderedList we can insert in O(1)
+
+
+
+
+
+
+
+
+
+
+Note for self reference:
+https://blog.csdn.net/xiaoxiaoxuanao/article/details/78692518
+
+
+
+
